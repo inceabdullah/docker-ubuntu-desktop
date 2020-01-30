@@ -17,6 +17,10 @@ ADD xstartup /root/.vnc/xstartup
 ADD passwd /root/.vnc/passwd
 
 RUN chmod 600 /root/.vnc/passwd
+RUN cd /usr/bin && \
+    echo "#!/bin/sh" > blender && \
+    echo "/bin/sh -c \"/root/blender2.8/blender-2.8*/blender-so*\"" >> blender && \
+    ln -s /usr/bin/blender /bin/blender
 
 CMD /usr/bin/vncserver :1 -geometry 1280x800 -depth 24 && tail -f /root/.vnc/*:1.log
 
