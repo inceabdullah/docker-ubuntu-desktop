@@ -1,0 +1,9 @@
+# venv
+
+venv/
+
+# zip, tar, rar
+
+*.rar
+*.zip
+*.tar.*

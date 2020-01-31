@@ -24,3 +24,9 @@ blender is in URL as tar.bz2, so wget is needed.
 
 `ADD` also could do this.
 
+# Py Path
+
+Py path is for manupulating mouse and keys to controle GUI on X Window.
+For it, used **pynput** module on `python`
+
+Noted that: this image little big like `3Gb`

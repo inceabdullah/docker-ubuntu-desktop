@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ubuntu:
+    image: ubuntu_desktop
+    build: ./ubuntu
+    ports:
+      - "5901:5901"
+    volumes:
+      - ./ubuntu/py_path:/home/py_path
+    stdin_open: true
+    tty: true  
